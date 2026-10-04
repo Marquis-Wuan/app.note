@@ -25,3 +25,4 @@ flutter_launcher_icons:
   image_path: assets/icon.png
   adaptive_icon_background: "#0F766E"
   adaptive_icon_foreground: assets/icon_fg.png
+  
