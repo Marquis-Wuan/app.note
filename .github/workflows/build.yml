@@ -26,7 +26,11 @@ jobs:
       - run: dart run flutter_launcher_icons
       - run: flutter build apk --release
 
+      # Hasil build selalu bernama app-release.apk; disalin ke habit_app.apk
+      - run: cp build/app/outputs/flutter-apk/app-release.apk habit_app.apk
+
       - uses: actions/upload-artifact@v4
         with:
           name: habit-app-apk
-          path: build/app/outputs/flutter-apk/habit_app.apk
+          path: habit_app.apk
+          
